@@ -4,3 +4,6 @@
 
 ## Video-002：PyQt5 First Software
 > https://www.youtube.com/watch?v=li-PB6lQpRo
+
+## Video-003: PyQt5 How to Create a Window for opening an Excel file
+> https://youtu.be/N_uKXmn1_oA
