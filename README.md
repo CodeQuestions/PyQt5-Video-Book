@@ -9,4 +9,5 @@
 > https://youtu.be/N_uKXmn1_oA
 
 ## Video-004：App_002_Password_Generator_PyQt5
+> https://youtu.be/8oxWxNgyfrI
 
