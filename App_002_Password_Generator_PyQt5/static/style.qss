@@ -1,0 +1,62 @@
+QMainWindow {
+    background-color: white;
+}
+
+QPushButton {
+    color: white;
+    border-radius:2px;
+    border-width:1px;
+    background-color: #0d6efd;
+    height : 25px;
+    min-width: 70px;
+    font : 13px;
+    font-family: "黑体";
+    qproperty-iconSize: 14px 14px; /* space for the background image */
+}
+
+QPushButton:pressed
+{
+    padding-left:15px;
+    border-radius:2px;
+}
+
+QLineEdit#password {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border-radius:5px;
+}
+
+QPushButton#refresh {
+    background-color: #5a6268;
+    qproperty-icon: url("static/icons/redo-5-128.gif"); /* empty image */
+}
+
+QPushButton#search {
+    qproperty-icon: url("static/icons/search-7-128.gif"); /* empty image */
+}
+
+QPushButton#delete {
+    background-color: #FF8080;
+    margin: 3px 5px;
+    qproperty-icon: url("static/icons/x-mark-2-128.gif"); /* empty image */
+}
+
+QPushButton#generate {
+    background-color: #343a40;
+    qproperty-icon: url("static/icons/pressure-128 (1).gif"); /* empty image */
+}
+
+QPushButton#save {
+    background-color: #28a745;
+    qproperty-icon: url("static/icons/save-128.gif"); /* empty image */
+}
+
+QPushButton#copy {
+    background-color: #007bff;
+    qproperty-icon: url("static/icons/copy-128.gif"); /* empty image */
+}
+
+
+
+
