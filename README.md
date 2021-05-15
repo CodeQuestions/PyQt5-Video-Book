@@ -7,3 +7,6 @@
 
 ## Video-003: PyQt5 How to Create a Window for opening an Excel file
 > https://youtu.be/N_uKXmn1_oA
+
+## Video-004：App_002_Password_Generator_PyQt5
+
