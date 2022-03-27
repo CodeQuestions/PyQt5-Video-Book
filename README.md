@@ -11,3 +11,5 @@
 ## Video-004：App_002_Password_Generator_PyQt5
 > https://www.youtube.com/watch?v=WpriikiZToY
 
+## Video-005：Menu structure for applications
+> https://youtu.be/JKVq_-uuELI
