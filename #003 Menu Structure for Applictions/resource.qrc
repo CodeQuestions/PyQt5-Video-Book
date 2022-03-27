@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>arrow-29-48.ico</file>
+    <file>arrow-208-32.ico</file>
+    <file>car-25-48.ico</file>
+    <file>check-mark-3-48.ico</file>
+    <file>check-mark-8-48.ico</file>
+    <file>group-48.ico</file>
+    <file>home-4-48.ico</file>
+    <file>lexus-48.ico</file>
+    <file>mazda-48.ico</file>
+    <file>menu-4-48.ico</file>
+    <file>settings-4-48.ico</file>
+    <file>top-navigation-toolbar-48.ico</file>
+    <file>toyota-48.ico</file>
+    <file>tumblr-3-48.ico</file>
+    <file>twitch-tv-2-48.ico</file>
+    <file>youtube-3-48.ico</file>
+  </qresource>
+</RCC>
