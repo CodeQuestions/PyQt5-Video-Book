@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>920</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>230</y>
+      <width>381</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Style for header area  ####################################################*/ 
+
+QCalendarWidget QWidget {
+	 alternate-background-color: #B8E2FF;
+}
+
+/* style for top navigation area ###############################################*/ 
+
+#qt_calendar_navigationbar {
+    background-color: #fff;
+	border: 2px solid  #B8E2FF;
+	border-bottom: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* style for month change buttons ############################################ */
+
+#qt_calendar_prevmonth, 
+#qt_calendar_nextmonth {
+	/* border delete */
+    border: none;  
+    /* delete default icons */
+	qproperty-icon: none; 
+	
+    min-width: 13px;
+    max-width: 13px;
+    min-height: 13px;
+    max-height: 13px;
+
+    border-radius: 5px; 
+	/* set background transparent */
+    background-color: transparent; 
+	padding: 5px;
+}
+
+/* style for pre month button ############################################ */
+
+#qt_calendar_prevmonth {
+	/* set text for button */
+	/*qproperty-text: &quot;&gt;&quot;;*/
+	margin-left:5px;
+	image: url(:/icon/arrow-119-48.ico);
+}
+
+/* style for next month button ########################################### */
+#qt_calendar_nextmonth {
+	margin-right:5px;
+	image: url(:/icon/arrow-19-48.ico);
+    /* qproperty-text: &quot;&gt;&quot;; */
+}
+#qt_calendar_prevmonth:hover, 
+#qt_calendar_nextmonth:hover {
+    background-color: #55aaff;
+}
+
+#qt_calendar_prevmonth:pressed, 
+#qt_calendar_nextmonth:pressed {
+    background-color: rgba(235, 235, 235, 100);
+}
+
+
+/* Style for month and yeat buttons #################################### */
+
+#qt_calendar_yearbutton {
+    color: #000;
+	margin:5px;
+    border-radius: 5px;
+	font-size: 13px;
+	padding:0px 10px;
+}
+
+ #qt_calendar_monthbutton {
+	width: 110px;
+    color: #000;
+	font-size: 13px;
+	margin:5px 0px;
+    border-radius: 5px;
+	padding:0px 2px;
+}
+
+#qt_calendar_yearbutton:hover, 
+#qt_calendar_monthbutton:hover {
+    background-color: #55aaff;
+}
+
+#qt_calendar_yearbutton:pressed, 
+#qt_calendar_monthbutton:pressed {
+    background-color: rgba(235, 235, 235, 100);
+}
+
+/* Style for year input lineEdit ######################################*/
+
+#qt_calendar_yearedit {
+    min-width: 53px;
+    color: #000;
+    background: transparent;
+	font-size: 13px;
+}
+
+/* Style for year change buttons ######################################*/
+
+#qt_calendar_yearedit::up-button { 
+	image: url(:/icon/arrow-151-48.ico);
+    subcontrol-position: right;
+}
+
+#qt_calendar_yearedit::down-button { 
+	image: url(:/icon/arrow-213-48.ico);
+    subcontrol-position: left; 
+}
+
+#qt_calendar_yearedit::down-button, 
+#qt_calendar_yearedit::up-button {
+	width:10px;
+	padding: 0px 5px;
+	border-radius:3px;
+}
+
+#qt_calendar_yearedit::down-button:hover, 
+#qt_calendar_yearedit::up-button:hover {
+	background-color: #55aaff;
+}
+
+/* Style for month select menu ##################################### */
+
+#calendarWidget QToolButton QMenu {
+     background-color: white;
+
+}
+#calendarWidget QToolButton QMenu::item {
+	/*padding: 10px;*/
+}
+ #calendarWidget QToolButton QMenu::item:selected:enabled {
+    background-color: #55aaff;
+}
+
+#calendarWidget QToolButton::menu-indicator {
+	/* Remove toolButton arrow */
+      /*image: none; */
+	nosubcontrol-origin: margin;
+	subcontrol-position: right center;
+	margin-top: 10px;
+	width:20px;
+}
+
+/* Style for calendar table ########################################## */
+#qt_calendar_calendarview {
+	/* Remove the selected dashed box */
+    outline: 0px;
+
+	border: 2px solid  #B8E2FF;
+	border-top: 0px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#qt_calendar_calendarview::item:hover {
+   border-radius:5px;
+	background-color:#aaffff;
+}
+
+#qt_calendar_calendarview::item:selected {
+    background-color: #55aa7f; 
+	border-radius:5px;
+}
+</string>
+    </property>
+    <property name="gridVisible">
+     <bool>false</bool>
+    </property>
+    <property name="horizontalHeaderFormat">
+     <enum>QCalendarWidget::ShortDayNames</enum>
+    </property>
+    <property name="verticalHeaderFormat">
+     <enum>QCalendarWidget::NoVerticalHeader</enum>
+    </property>
+    <property name="navigationBarVisible">
+     <bool>true</bool>
+    </property>
+    <property name="dateEditEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>381</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>920</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

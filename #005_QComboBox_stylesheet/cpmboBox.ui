@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>120</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::TabFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comboBox {
+	border: 1px solid #ced4da;
+	border-radius: 4px;
+	padding-left: 10px;
+}
+
+#comboBox::drop-down {
+    border: 0px;
+}
+
+#comboBox::down-arrow {
+    image: url(:/icon/arrow-204-32.ico);
+    width: 12px;
+    height: 12px;
+	margin-right:15px;
+}
+
+#comboBox:on {
+ 	border: 4px solid #c2dbfe;
+ }
+
+QComboBox QListView {
+	font-size: 12px;
+	border:1px solid rgba(0,0,0,10%);
+	padding:5px;
+	background-color: #fff;
+	outline: 0px;  /*去虚线*/
+}
+
+QComboBox QListView::item{
+	padding-left:10px;
+	background-color:#FFFFFF;
+}
+QComboBox QListView::item:hover{
+   background-color:#1e90ff;
+}
+QComboBox QListView::item:selected{
+   background-color:#1e90ff;
+}
+
+</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>14</width>
+      <height>14</height>
+     </size>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Open this select menu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>One</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Two</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Three</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>665</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
