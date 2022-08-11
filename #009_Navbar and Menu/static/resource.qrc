@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/home-4-48.ico</file>
+    <file>icon/car-4-64.ico</file>
+    <file>icon/group-64.ico</file>
+    <file>icon/home-4-48.ico</file>
+    <file>icon/redeem-64.ico</file>
+    <file>icon/search-3-48.ico</file>
+    <file>icon/user-48.ico</file>
+    <file>icon/redeem-64.ico</file>
+    <file>icon/search-3-48.ico</file>
+    <file>icon/user-48.ico</file>
+  </qresource>
+</RCC>

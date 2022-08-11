@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>833</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Set background color for main window */
+#MainWindow {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(188, 231, 215, 255), stop:1 rgba(122, 215, 255, 255));
+}
+
+/* Set style for QCheckBox:  space, font size and font color */
+QCheckBox {
+	spacing: 15px;
+	font-size: 25px;
+	color: #4169e1;
+}
+
+/* Set size for QCheckBox indicator */
+QCheckBox::indicator {
+	width: 25px;
+	height: 25px;
+}
+
+/* Change font color when mouse is hover on QCheckBox   */
+QCheckBox:hover {
+	color: #B31031;
+}
+
+/* Set image for QCheckBox indicator when it is unchecked  */
+QCheckBox::indicator:unchecked {
+	image: url(:/icon/icons/checkbox_unchecked.ico);
+}
+
+/* Set image for QCheckBox unchecked indicator when it is hovered and pressed  */
+QCheckBox::indicator:unchecked:hover, QCheckBox::indicator:unchecked:pressed {
+	image: url(:/icon/icons/checkbox_unchecked_hover_pressed.ico);
+}
+
+/* Set image for QCheckBox indicator when it is checked  */
+QCheckBox::indicator:checked {
+	image: url(:/icon/icons/checkbox_checked.ico);
+}
+
+/* Set image for QCheckBox checked indicator when it is hovered and pressed  */
+QCheckBox::indicator:checked:hover, QCheckBox::indicator:checked:pressed {
+	image: url(:/icon/icons/checkbox_checked_hover_pressed.ico);
+}
+
+/* Set image for QCheckBox indicator when it is indeterminated  */
+QCheckBox::indicator:indeterminate {
+	image: url(:/icon/icons/checkbox_indeterminate.ico);
+}
+
+/* Set image for QCheckBox indeterminated indicator when it is hovered and pressed  */
+QCheckBox::indicator:indeterminate:hover, QCheckBox::indicator:indeterminate:pressed {
+	image: url(:/icon/icons/checkbox_indeterminate_hover_pressed.ico);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>50</number>
+    </property>
+    <property name="rightMargin">
+     <number>50</number>
+    </property>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_2">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_3">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CheckBox</string>
+      </property>
+      <property name="tristate">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>833</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
