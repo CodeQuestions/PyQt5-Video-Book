@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1234</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow {
+	background-color: #fff;
+}
+
+#MainWindow QPushButton {
+	border: 5px solid #fff;
+	border-radius: 8px;
+    border: 5px solid #fff;
+    padding: 1px 5px;
+	min-width: 120px;
+	min-height:35px;
+}
+
+#Primary {
+	color: #fff;
+    background-color: #0d6efd;
+}
+
+#Primary:hover {
+	background-color: #0055ff;
+}
+
+#Primary:pressed {
+	border: 4px solid #98c1fe;
+}
+
+#Secondary {
+	color: #fff;
+    background-color: #6c757d;
+}
+
+#Secondary:hover {
+	background-color:#5c636a;
+}
+
+#Secondary:pressed {
+	border: 4px solid #c0c4c8;
+}
+
+#Success {
+	color: #fff;
+    background-color: #198754;
+}
+
+#Success:hover {
+	background-color:#157347;
+}
+
+#Success:pressed {
+	border: 4px solid #9dccb6;
+}
+
+#Danger {
+	color: #fff;
+    background-color: #dc3545;
+}
+
+#Danger:hover {
+	background-color: #bb2d3b;
+}
+
+#Danger:pressed {
+	border: 4px solid #f0a9b0;
+}
+
+#Warning {
+	color: #000;
+    background-color: #ffc107;
+}
+
+#Warning:hover {
+	background-color:#ffca2c;
+}
+
+#Warning:pressed {
+	border: 5px solid #ecd182;
+}
+
+#Info {
+	color: #000;
+    background-color: #0dcaf0;
+}
+
+#Info:hover {
+	background-color:#31d2f2;
+}
+
+#Info:pressed {
+	border: 4px solid #85d5e5;
+}
+
+#Light {
+	color: #000;
+    background-color: #f8f9fa;
+}
+
+#Light:hover {
+	background-color:#f9fafb;
+}
+
+#Light:pressed {
+	border: 4px solid #e9e9ea;
+}
+
+#Dark {
+	color: #fff;
+    background-color: #212529;
+}
+
+#Dark:hover {
+	background-color: #1c1f23;
+}
+
+#Dark:pressed {
+	border: 4px solid #a0a2a4;
+}
+
+
+#Link {
+	color: #0d6efd;
+}
+
+#Link:hover {
+	
+	color:#0000ff;
+}
+
+#Link:pressed {
+	border: 4px solid #c2dbfe;
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="horizontalSpacing">
+     <number>20</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>40</number>
+    </property>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="Primary">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Primary</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="Warning">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Warning</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="Info">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Info</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QPushButton" name="Link">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <underline>true</underline>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Link</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="Secondary">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Secondary</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="Danger">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Danger</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="Success">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Success</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" rowspan="5">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="Light">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Light</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="Dark">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Dark</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4" rowspan="5">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1234</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
