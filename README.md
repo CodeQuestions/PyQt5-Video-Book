@@ -25,6 +25,8 @@
 ## Video-008: PyQt5 Project | Menu Structure for applications V2
 > https://youtu.be/jWxNfb7Hng8
 
+## Video-009: PyQt5 Project | Sidebar example of application
+> https://youtu.be/7DXxQV47jOU
 
 ## Video：How to create live template of Pycharm
 > https://www.youtube.com/watch?v=AHs0ZxMHQoc
