@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>radio_button_fill_icon.png</file>
+    <file>radio_button_off_icon.png</file>
+    <file>alarm-clock.png</file>
+    <file>calendar.png</file>
+    <file>edit-list.png</file>
+  </qresource>
+</RCC>
