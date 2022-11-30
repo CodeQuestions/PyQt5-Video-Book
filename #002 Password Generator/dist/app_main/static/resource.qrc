@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/arrow-80-48.ico</file>
+    <file>icon/arrow-146-48.ico</file>
+    <file>icon/arrow-208-48.ico</file>
+    <file>icon/checkbox_checked.ico</file>
+    <file>icon/checkbox_unchecked.ico</file>
+    <file>icon/check-mark-3-48.ico</file>
+    <file>icon/copy-128.gif</file>
+    <file>icon/data-configuratio-checkedn-48.ico</file>
+    <file>icon/data-configuration-128.gif</file>
+    <file>icon/edit-property-48.ico</file>
+    <file>icon/generic-text-48.ico</file>
+    <file>icon/generic-text-48-checked.ico</file>
+    <file>icon/key-4-48-checked.ico</file>
+    <file>icon/key-4-128.gif</file>
+    <file>icon/key-6-128.ico</file>
+    <file>icon/key-48.ico</file>
+    <file>icon/login-64.ico</file>
+    <file>icon/logout-48.ico</file>
+    <file>icon/pressure-128 (1).gif</file>
+    <file>icon/pressure-128.gif</file>
+    <file>icon/question-mark-7-48.ico</file>
+    <file>icon/recurring-appointment-48.ico</file>
+    <file>icon/redo-5-128.gif</file>
+    <file>icon/save-128.gif</file>
+    <file>icon/search-7-128.gif</file>
+    <file>icon/show-property-128.gif</file>
+    <file>icon/user-48.ico</file>
+    <file>icon/x-mark-2-128.gif</file>
+    <file>icon/x-mark-3-48.ico</file>
+    <file>icon/x-mark-48.ico</file>
+  </qresource>
+  <qresource prefix="img">
+    <file>img/206954.jpg</file>
+  </qresource>
+</RCC>

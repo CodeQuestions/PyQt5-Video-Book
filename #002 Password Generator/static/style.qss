@@ -1,9 +1,9 @@
 /* Set style for buttons in QMessageBox dialog */
-QDialogButtonBox > QPushButton[text="&Yes"] {
+QDialogButtonBox > QPushButton {
     background-color: orange;
 }
 
-QDialogButtonBox > QPushButton[text="&No"] {
+QDialogButtonBox > QPushButton {
     background-color: green;
 }
 
@@ -17,3 +17,10 @@ QDialogButtonBox > QPushButton {
 QDialogButtonBox > QPushButton:pressed {
     padding-left: 10px;
 }
+
+/* Set style for delete button */
+QPushButton#delete {
+    background-color: #FF8080;
+    margin: 3px 5px;
+}
+
