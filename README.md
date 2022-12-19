@@ -4,13 +4,13 @@
 > https://youtu.be/_VbAukmBCCo
 
 ## 002 Password Generator
-> https://youtu.be/hWGdSFH8haE
+> Part1: https://youtu.be/hWGdSFH8haE
 
-> https://youtu.be/1Y7EeL3J8C4
+> Part2: https://youtu.be/1Y7EeL3J8C4
 
-> https://youtu.be/Dw5wUUG97Sk
+> Part3: https://youtu.be/Dw5wUUG97Sk
 
-> https://youtu.be/iqugGUppJPo
+> Part4: https://youtu.be/iqugGUppJPo
 
 ## Video-001: PyQt5 How to Create a Window for opening an Excel file
 > https://www.youtube.com/watch?v=Mv_oQ_OohPQ
