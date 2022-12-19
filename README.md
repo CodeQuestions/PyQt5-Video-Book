@@ -3,10 +3,7 @@
 ## 013_QTableWidget_copy_paste
 > https://youtu.be/_VbAukmBCCo
 
-## Video-001: PyQt5 How to Create a Window for opening an Excel file
-> https://www.youtube.com/watch?v=Mv_oQ_OohPQ
-
-## Video-002：App_002_Password_Generator_PyQt5
+## 002 Password Generator
 > https://youtu.be/hWGdSFH8haE
 
 > https://youtu.be/1Y7EeL3J8C4
@@ -14,6 +11,9 @@
 > https://youtu.be/Dw5wUUG97Sk
 
 > https://youtu.be/iqugGUppJPo
+
+## Video-001: PyQt5 How to Create a Window for opening an Excel file
+> https://www.youtube.com/watch?v=Mv_oQ_OohPQ
 
 ## Video-003：Menu structure for applications
 > https://youtu.be/JKVq_-uuELI
