@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="img">
+    <file>static/526622.jpg</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>static/businessman-24.ico</file>
+    <file>static/cross-script.png</file>
+    <file>static/key-24.ico</file>
+  </qresource>
+</RCC>
