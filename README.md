@@ -1,14 +1,19 @@
 # PyQt5-Video-Book
 
+## 013_QTableWidget_copy_paste
+> https://youtu.be/_VbAukmBCCo
+
+## 002 Password Generator
+> Part1: https://youtu.be/hWGdSFH8haE
+
+> Part2: https://youtu.be/1Y7EeL3J8C4
+
+> Part3: https://youtu.be/Dw5wUUG97Sk
+
+> Part4: https://youtu.be/iqugGUppJPo
+
 ## Video-001: PyQt5 How to Create a Window for opening an Excel file
 > https://www.youtube.com/watch?v=Mv_oQ_OohPQ
-
-## Video-002：App_002_Password_Generator_PyQt5
-> https://youtu.be/hWGdSFH8haE
-
-> https://youtu.be/1Y7EeL3J8C4
-
-> https://youtu.be/Dw5wUUG97Sk
 
 ## Video-003：Menu structure for applications
 > https://youtu.be/JKVq_-uuELI
