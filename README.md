@@ -3,6 +3,7 @@
 ## StyleSheet Example:
 ### QLineEdit
 > https://youtu.be/HnzGjobOSh0
+
 > https://youtu.be/6lgcioyeq3E
 
 ## 013_QTableWidget_copy_paste
