@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Convert Ui File to Py File</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/static/refresh-128 #4169E1.ico</normaloff>:/icons/static/refresh-128 #4169E1.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Style for QComoBox 
+	============================================== START */
+QComboBox {
+	border: none;
+	min-height:26px;
+	border-radius: 5px;
+	padding-left: 8px;
+	padding-right: 5px;
+	border: 2px solid #fff;
+}
+
+QComboBox::drop-down {
+    border: 0px;
+}
+
+QComboBox::down-arrow {
+	image: url(:/icons/static/arrow-208-32.ico);
+    width: 12px;
+    height: 12px;
+	margin-right:15px;
+}
+
+QComboBox:on {
+ 	border: 2px solid #E59866;
+ }
+
+QComboBox QListView {
+	border:1px solid rgba(0,0,0,10%);
+	padding:5px;
+	background: transparent;
+	background-color: #FFFFFF;
+	outline: 0px;
+}
+
+QComboBox::item {
+	padding:5px;
+	background-color:#FFFFFF;
+}
+
+QComboBox::item:hover,
+QComboBox::item:selected
+{
+   background-color:#1e90ff;
+}
+
+/* Style for QComoBox
+	 ==============================================  END */
+
+/* Style for special QFrame 
+	 ============================================== START */
+#frame {
+	border-image: url(:/imgs/static/mountains-gfcb2d4ac0_1920.jpg);
+}
+
+#warning_frame {
+	border-radius: 5px;
+	background: #FDFEFE;
+}
+/* Style for special QFrame  
+	=============================================== END */
+
+/* Style for QPushButton
+	 ============================================== START */
+QPushButton {
+	border: 5px solid #fff;
+	border-radius: 5px;
+    border: 4px solid #F9E79F;
+    padding: 1px 5px;
+	min-width: 120px;
+	min-height:20px;
+	background-color: #F9E79F;
+}
+
+
+QPushButton:hover {
+	background-color: #F4D03F;
+	border-color: #F4D03F;
+}
+
+QPushButton:pressed {
+	border: 4px solid #FEF9E7;
+}
+/* Style for QPushButton
+	 ============================================== END */
+
+/* Style for QLineEdit
+	 ============================================= START */
+QLineEdit  {
+	border: none;
+	min-height:26px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border:  2px solid #fff;
+}
+
+QLineEdit:focus {
+	border:  2px solid #E59866;
+}
+/* Style for QLineEdit
+	 ============================================== END */
+
+/* Style for QCheckBox
+	 ============================================= START */
+QCheckBox {
+	spacing: 8px;
+	font-size: 14px;
+	color: #fff;
+}
+
+QCheckBox::indicator {
+	width: 15px;
+	height: 15px;
+}
+
+QCheckBox::indicator:unchecked {
+	image: url(:/icons/static/square-rounded-64 #fff.ico);
+}
+
+QCheckBox::indicator:checked {
+	image: url(:/icons/static/check-mark-8-64 #42c0fb.ico);
+}
+/* Style for QCheckBox
+	 ============================================== END */
+
+/* Style for QLabel
+	 ============================================= START */
+QLabel {
+	color: #A00101;
+}
+
+/* Speacial QLabel */
+#result_count {
+    color: #fff;
+    font-size: 12px;
+}
+/* Style for QLabel
+	 ============================================== END */
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QFrame" name="frame_2">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="0">
+        <widget class="QGroupBox" name="groupBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI</family>
+           <italic>false</italic>
+           <bold>false</bold>
+           <underline>true</underline>
+           <strikeout>false</strikeout>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="title">
+          <string>Files list</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QListView" name="listView">
+            <property name="flow">
+             <enum>QListView::TopToBottom</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QFrame" name="warning_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Segoe MDL2 Assets</family>
+              <pointsize>10</pointsize>
+              <italic>true</italic>
+             </font>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="leftMargin">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>15</number>
+       </property>
+       <property name="rightMargin">
+        <number>15</number>
+       </property>
+       <property name="bottomMargin">
+        <number>15</number>
+       </property>
+       <item row="1" column="0" colspan="3">
+        <widget class="QComboBox" name="comboBox">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <item>
+          <property name="text">
+           <string>Select Convert Version</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PyQt6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PyQt5</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PySide6</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PySide2</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Start Convert</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icons/static/python-48.ico</normaloff>:/icons/static/python-48.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Reset Settings</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icons/static/sinchronize-64.ico</normaloff>:/icons/static/sinchronize-64.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>30</number>
+         </property>
+         <property name="leftMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="checkBox">
+           <property name="font">
+            <font>
+             <family>Segoe MDL2 Assets</family>
+             <pointsize>-1</pointsize>
+             <italic>true</italic>
+             <bold>false</bold>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="text">
+            <string>UI files</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox_2">
+           <property name="font">
+            <font>
+             <family>Segoe MDL2 Assets</family>
+             <pointsize>-1</pointsize>
+             <italic>true</italic>
+             <bold>false</bold>
+             <underline>true</underline>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="text">
+            <string>Resource files</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="result_count">
+           <property name="text">
+            <string>Total Files</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>Selected Path</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resource.qrc">
+           <normaloff>:/icons/static/folder-3-48.ico</normaloff>:/icons/static/folder-3-48.ico</iconset>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::ClickFocus</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Convert folder path</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

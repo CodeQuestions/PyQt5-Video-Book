@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>static/alert-64.ico</file>
+    <file>static/arrow-208-32.ico</file>
+    <file>static/checkbox_checked.ico</file>
+    <file>static/checkbox_checked_hover_pressed.ico</file>
+    <file>static/checkbox_indeterminate.ico</file>
+    <file>static/checkbox_indeterminate_hover_pressed.ico</file>
+    <file>static/checkbox_unchecked.ico</file>
+    <file>static/checkbox_unchecked_hover_pressed.ico</file>
+    <file>static/check-mark-3-64 #1EBB2E.ico</file>
+    <file>static/check-mark-8-64 #42c0fb.ico</file>
+    <file>static/check-mark-8-64 #4169e1.ico</file>
+    <file>static/folder-3-48.ico</file>
+    <file>static/python-48.ico</file>
+    <file>static/refresh-128 #4169E1.ico</file>
+    <file>static/sinchronize-64.ico</file>
+    <file>static/square-rounded-64 #fff.ico</file>
+  </qresource>
+  <qresource prefix="imgs">
+    <file>static/mountains-gfcb2d4ac0_1920.jpg</file>
+  </qresource>
+</RCC>
