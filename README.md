@@ -57,8 +57,8 @@
   
   * > https://youtu.be/ySc5bCDkASg
   
-  ![Snipaste_2023-02-01_23-16-53](https://user-images.githubusercontent.com/31199068/216777674-a792efbf-54ae-418b-8154-3e4668c989af.png)
-  
+  ![Snipaste_2023-02-27_22-14-36](https://user-images.githubusercontent.com/31199068/221885147-ed257003-c4cf-452c-9fea-d5ca07a42f71.png)
+
 </details>
 
 <details>
