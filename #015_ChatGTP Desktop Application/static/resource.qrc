@@ -1,0 +1,47 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/user.svg</file>
+    <file>icons/add_google_icon.svg</file>
+    <file>icons/add_google_icon.svg</file>
+    <file>icons/plus-lg.svg</file>
+    <file>icons/robot.svg</file>
+    <file>icons/add.png</file>
+    <file>icons/add_google_icon.png</file>
+    <file>icons/add_google_icon.svg</file>
+    <file>icons/box-arrow-up-right.svg</file>
+    <file>icons/brightness-high.svg</file>
+    <file>icons/chat.png</file>
+    <file>icons/chatGTP.png</file>
+    <file>icons/chat-left.svg</file>
+    <file>icons/check.svg</file>
+    <file>icons/check-lg.svg</file>
+    <file>icons/dark.png</file>
+    <file>icons/delete.png</file>
+    <file>icons/delete.svg</file>
+    <file>icons/edit (2).svg</file>
+    <file>icons/edit.png</file>
+    <file>icons/edit.svg</file>
+    <file>icons/exclamation-triangle.svg</file>
+    <file>icons/input.png</file>
+    <file>icons/light.png</file>
+    <file>icons/lightning-charge.svg</file>
+    <file>icons/logout.png</file>
+    <file>icons/logout.svg</file>
+    <file>icons/moon.svg</file>
+    <file>icons/open AI.png</file>
+    <file>icons/open AI.svg</file>
+    <file>icons/pencil-square.svg</file>
+    <file>icons/plus.svg</file>
+    <file>icons/plus-lg.svg</file>
+    <file>icons/reedit.png</file>
+    <file>icons/reedit1.png</file>
+    <file>icons/send.svg</file>
+    <file>icons/thumb_down.svg</file>
+    <file>icons/thumb_up.svg</file>
+    <file>icons/update.png</file>
+    <file>icons/user.png</file>
+    <file>icons/user.svg</file>
+    <file>icons/x.svg</file>
+    <file>icons/x-lg.svg</file>
+  </qresource>
+</RCC>
