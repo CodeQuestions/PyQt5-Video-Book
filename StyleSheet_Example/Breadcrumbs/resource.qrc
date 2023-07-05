@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icons/arrow_black.png</file>
+    <file>icons/arrow_gray.png</file>
+    <file>icons/home-4-48.ico</file>
+  </qresource>
+</RCC>
