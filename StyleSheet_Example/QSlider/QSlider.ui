@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>490</width>
+    <height>539</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QSlider" name="horizontalSlider">
+      <property name="tracking">
+       <bool>true</bool>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="tickPosition">
+       <enum>QSlider::NoTicks</enum>
+      </property>
+      <property name="tickInterval">
+       <number>2</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_2">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #2a2a2a;
+    width: 10px;
+    margin: -5px -1px; 
+    border-radius: 5px;
+	border: 1px solid #2a2a2a;
+}
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+QSlider::sub-page:horizontal {
+    background: #2a2a2a;
+}</string>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_4">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 2px;
+}
+
+QSlider::handle:horizontal {
+    background: #2a2a2a;
+    width: 10px;
+    margin: -5px -1px; 
+    border-radius: 5px;
+	border: 1px solid #2a2a2a;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #007ad9;
+    border-color: #007ad9;
+}
+
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+QSlider::sub-page:horizontal {
+    background: #2a2a2a;
+}</string>
+      </property>
+      <property name="value">
+       <number>40</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_3">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+}
+
+QSlider::handle:horizontal {
+    background: #fff;
+    width: 10px;
+    margin: -1px -1px; 
+    border-radius: 5px;
+	border: 1px solid #5555ff;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #000;
+   border-color: #000;
+}
+
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+QSlider::sub-page:horizontal {
+    background: #5555ff;
+}</string>
+      </property>
+      <property name="value">
+       <number>20</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_5">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+}
+
+QSlider::handle:horizontal {
+    background: #fff;
+    width: 10px;
+    margin: -1px -1px; 
+	border: 1px solid #5555ff;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #000;
+   border-color: #000;
+}
+
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+QSlider::sub-page:horizontal {
+    background: #5555ff;
+}</string>
+      </property>
+      <property name="value">
+       <number>70</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_6">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+}
+
+QSlider::handle:horizontal {
+    background: #fff;
+    width: 10px;
+    margin: -1px -1px; 
+	border: 1px solid #5555ff;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: #000;
+   border-color: #000;
+}
+
+
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+QSlider::sub-page:horizontal {
+    background: #5555ff;
+}</string>
+      </property>
+      <property name="value">
+       <number>40</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSlider" name="horizontalSlider_7">
+      <property name="styleSheet">
+       <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+}
+
+QSlider::handle:horizontal {
+    background: #fff;
+    width: 10px;
+    margin: -1px -1px; 
+    border-radius: 5px;
+	border: 1px solid #5555ff;
+}
+
+QSlider::add-page:horizontal {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(188, 231, 215, 255), stop:1 rgba(122, 215, 255, 255));
+}
+
+QSlider::sub-page:horizontal {
+    background: qlineargradient(spread:pad, x1:1, y1:0.585, x2:0, y2:0.556818, stop:0 rgba(132, 76, 171, 255), stop:1 rgba(122, 130, 255, 255));
+}</string>
+      </property>
+      <property name="value">
+       <number>60</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>490</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
