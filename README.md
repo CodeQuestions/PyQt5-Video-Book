@@ -49,7 +49,15 @@
   
 </details>
 
+<details>
+  <summary><strong>016_QR_Code_Generator</strong></summary>
+  <br/>
+  
+  * > https://youtu.be/ySc5bCDkASg]
 
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/0f8f74d5-e704-402c-836c-215e4b5c234d)
+
+</details>
 
 <details>
   <summary><strong>015_ChatGPT Desktop Application</strong></summary>
