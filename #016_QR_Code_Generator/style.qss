@@ -1,0 +1,89 @@
+/* Styling for the main window background */
+#MainWindow {
+	background-color: #dadada;
+}
+
+/* Styling for the section frame background */
+#output_frame,
+#function_frame,
+#setting_frame
+{
+	background-color: #fff;
+}
+
+/* Styling for the common rounded border radius for various elements */
+#setting_frame,
+#function_frame,
+#input_frame,
+#setting_frame QLineEdit,
+#setting_frame QPushButton
+ {
+	border-radius: 5px;
+}
+
+/* Styling for the input and setting frames' borders */
+#input_frame,
+#setting_frame QLineEdit
+ {
+border: 1px solid #000;
+
+}
+
+/* Styling for the QTextEdit within the input frame */
+#input_frame QTextEdit {
+	border: none;
+}
+
+/* Styling for padding in the QLineEdit within the setting frame */
+#setting_frame QLineEdit
+{
+    padding:  5px;
+}
+
+/* Styling for QPushButton elements in setting and function frames */
+#setting_frame QPushButton,
+#function_frame QPushButton
+ {
+	background: #2a2a2a;
+	color: #fff;
+	border-radius: 5px;
+	padding: 7px 10px;
+}
+
+/* Styling for QPushButton elements on hover and click in setting and function frames */
+#setting_frame QPushButton:hover,
+#setting_frame QPushButton:clicked,
+
+#function_frame QPushButton:hover,
+#function_frame QPushButton:clicked
+{
+	background: #000;
+	color: #fff;
+	padding: 7px 10px;
+}
+
+/* Styling for the horizontal groove of a QSlider */
+QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 2px; /* The groove's height and gradient */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+/* Styling for the handle (slider thumb) of a QSlider */
+QSlider::handle:horizontal {
+    background: #2a2a2a;
+    width: 10px;
+    margin: -5px 0; /* Handle's placement and size */
+    border-radius: 5px;
+
+}
+
+/* Styling for the added portion of the QSlider when value is increased */
+QSlider::add-page:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+}
+
+/* Styling for the subtracted portion of the QSlider when value is decreased */
+QSlider::sub-page:horizontal {
+    background: #2a2a2a;
+}
