@@ -50,6 +50,16 @@
 </details>
 
 <details>
+  <summary><strong>PyQt6 Programs | Students Information Management System -Full Tutorial</strong></summary>
+  <br/>
+  
+  * > https://youtu.be/2WuHs-5kMl0
+    
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/3288ace5-bd0e-4256-a875-d770d978f5a4)
+
+</details>
+
+<details>
   <summary><strong>016_QR_Code_Generator</strong></summary>
   <br/>
   
