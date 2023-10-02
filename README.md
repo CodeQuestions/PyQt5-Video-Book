@@ -50,7 +50,7 @@
 </details>
 
 <details>
-  <summary><strong>PyQt6 Programs | Students Information Management System -Full Tutorial</strong></summary>
+  <summary><strong>017_PyQt6 Programs | Students Information Management System -Full Tutorial</strong></summary>
   <br/>
   
   * > https://youtu.be/2WuHs-5kMl0
