@@ -50,6 +50,16 @@
 </details>
 
 <details>
+  <summary><strong>018_PyQt6 Programs | #018_Animated Sidebar Menu Example</strong></summary>
+  <br/>
+  
+  * > [https://youtu.be/2WuHs-5kMl0](https://youtu.be/KxHFFHqeqG0)
+    
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/67c0b0e1-f4a7-4e2c-8799-cab31dd5ee4a)
+
+</details>
+
+<details>
   <summary><strong>017_PyQt6 Programs | Students Information Management System -Full Tutorial</strong></summary>
   <br/>
   
