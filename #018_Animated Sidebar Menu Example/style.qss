@@ -1,0 +1,99 @@
+/* Define styles for the 'title_label' widget */
+#title_label {
+    font-size: 16px;
+    font-family: Amazone BT;
+}
+
+/* Define styles for the 'title_icon' widget */
+#title_icon {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+/* Define styles for the 'menu_btn' widget */
+#menu_btn {
+    border: none;
+}
+
+/* Define styles for the 'QStackedWidget' */
+QStackedWidget {
+    background-color: #fff;
+}
+
+/* Define styles for 'QListWidget' and '#title_frame' */
+QListWidget,
+#title_frame {
+    background-color: #f0f0f0;
+}
+
+/* Define border styles for '#stackedWidget' and '#title_frame' */
+#stackedWidget,
+#title_frame {
+    border: 1px solid #828790;
+}
+
+/* Additional border style for '#stackedWidget' */
+#stackedWidget {
+    border-left: none;
+}
+
+/* Additional border style for '#title_frame' */
+#title_frame {
+    border-bottom: none;
+}
+
+/* Define font styles for '#listWidget' */
+#listWidget {
+    font-size: 13px;
+    font-family: Segoe UI Semibold;
+}
+
+/* Styles for list items in '#listWidget' and '#listWidget_icon_only' */
+#listWidget::item,
+#listWidget_icon_only::item {
+    /* Ensure borders are set for proper styling */
+    border: 0px;
+    padding: 5px 10px;
+    margin: 2px 0;
+}
+
+/* Border radius for '#listWidget' items */
+#listWidget::item {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Border radius for '#listWidget_icon_only' items */
+#listWidget_icon_only::item {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+/* Padding adjustment for '#listWidget_icon_only' items */
+#listWidget_icon_only::item {
+    padding-top: 0px;
+}
+
+/* Hover effect for list items */
+#listWidget::item:hover,
+#listWidget_icon_only::item:hover {
+    background-color: #dadada;
+}
+
+/* Selected item styles for list items */
+#listWidget::item:selected,
+#listWidget_icon_only::item:selected {
+    background-color: #00aaff;
+}
+
+/* Define icon dimensions for '#listWidget' items */
+#listWidget::icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Define icon dimensions for '#listWidget_icon_only' items */
+#listWidget_icon_only::icon {
+    width: 23px;
+    height: 23px;
+}
