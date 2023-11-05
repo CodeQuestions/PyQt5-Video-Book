@@ -50,7 +50,17 @@
 </details>
 
 <details>
-  <summary><strong>018_PyQt6 Programs | #018_Animated Sidebar Menu Example</strong></summary>
+  <summary><strong> 019 PyQt6 Programs | Quiz App </strong></summary>
+  <br/>
+  
+  * > https://youtu.be/yJmnWzgGodk
+    
+    ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/b6418223-23e5-44d5-9ad1-548d7637f261)
+
+</details>
+
+<details>
+  <summary><strong>018_PyQt6 Programs | Animated Sidebar Menu Example</strong></summary>
   <br/>
   
   * > [https://youtu.be/2WuHs-5kMl0](https://youtu.be/KxHFFHqeqG0)
