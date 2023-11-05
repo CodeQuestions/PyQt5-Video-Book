@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1152</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QLabel {
+	border-radius: 3px;
+	border: 1px solid #dee2e6;
+	padding: 5px;
+	font-family: system-ui;
+	font-size: 14px;
+	font-color:#0a3622;
+	min-height: 20px;
+}
+
+
+QComboBox,
+QSpinBox,
+QLineEdit {
+	min-height: 20px;
+	padding: 5px;
+   font-family: Segoe UI Semibold;
+	font-size: 14px;
+	color: #3232CD;
+}
+
+
+QPushButton {
+	padding: 10px;
+	border-top-right-radius: 10px 15px; 
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 10px 15px;
+	border-bottom-right-radius: 5px;
+	max-width: 200px;
+	background-color: #265dd0;
+	font-family: system-ui;
+	font-weight: 300;
+	font-size: 14px;
+	color: #fff;
+}
+
+#db_frame QPushButton {
+	background-color: #265dd0;
+}
+
+#questions_frame {
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+
+
+
+#db_frame {
+	background-color: #fff;
+	border: 1px solid #f8f9fa;
+	border-radius: 5px;
+}
+
+
+#db_frame QLabel {
+	background-color: #d4e6de;
+}
+
+#info_frame QLabel {
+	background-color: #d2e1fc;
+	color: #000;
+	min-width: 80px;
+}
+
+#info_frame QLineEdit {
+	border: none;
+}
+
+
+#question_frame QLabel {
+	background-color: #ffc107;
+	color: #000;
+}
+
+
+#answer_frame {
+	padding: 5px 10px;
+}
+
+#function_frame {
+}
+
+QPlainTextEdit,
+QRadioButton {
+	font-family: system-ui;
+	font-size: 14px;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="1">
+     <widget class="QFrame" name="questions_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QFrame" name="info_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="horizontalSpacing">
+           <number>30</number>
+          </property>
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Category</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Segoe UI Semibold</family>
+                <pointsize>-1</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Entertainment: Video Games</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>difficulty</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Medium</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <widget class="QLabel" name="question_count_label">
+            <property name="text">
+             <string>10/50</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="question_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Question:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="font">
+             <font>
+              <family>system-ui</family>
+              <pointsize>-1</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #fff;
+color: #000;
+padding: 5px 10px;</string>
+            </property>
+            <property name="plainText">
+             <string>What is the right way to spell the capital of Hungary?</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="answer_frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QRadioButton" name="radioButton">
+               <property name="text">
+                <string>Budapest</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_2">
+               <property name="text">
+                <string>Boodapest</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_3">
+               <property name="text">
+                <string>Bhudapest</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_4">
+               <property name="text">
+                <string>Budapast</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QFrame" name="function_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>Try Again</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/refresh-48.ico</normaloff>icons/refresh-48.ico</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>Check</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/checkmark-48.ico</normaloff>icons/checkmark-48.ico</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>Next</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/arrow-21-48.ico</normaloff>icons/arrow-21-48.ico</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="db_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <property name="spacing">
+        <number>15</number>
+       </property>
+       <property name="topMargin">
+        <number>15</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>Number of Questions</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinBox_2">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="value">
+            <number>50</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Select Category</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_6"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Select Difficulty</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_5"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Select Type</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_4"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <property name="topMargin">
+           <number>20</number>
+          </property>
+          <property name="bottomMargin">
+           <number>15</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>Get New Questions</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>icons/search-9-48.ico</normaloff>icons/search-9-48.ico</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>18</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1152</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

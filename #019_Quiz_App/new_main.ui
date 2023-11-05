@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1017</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quiz Application</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/logo.png</normaloff>icons/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Global styles for multiple elements */
+QToolBox::tab,
+QPushButton,
+QLabel,
+QPlainTextEdit,
+QRadioButton,
+QStatusBar {
+    font-family: system-ui; /* Set the font family for various elements */
+    font-size: 14px; /* Set the font size for various elements */
+}
+
+/* Title frame styles */
+#title_frame {
+    background-color: #393e4d; /* Set the background color of the title frame */
+}
+
+#title_frame QLabel {
+    font-family: Zurich XBlk BT; /* Set a specific font family for labels inside the title frame */
+    font-size: 30px; /* Set the font size for labels inside the title frame */
+    color: #fff; /* Set the text color for labels inside the title frame to white */
+}
+
+/* QToolBoxButton styles */
+QToolBoxButton {
+    min-height: 35px; /* Set the minimum height for QToolBox buttons */
+}
+
+/* QToolBox tab styles */
+QToolBox::tab {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+        stop: 0 #a6a29a, stop: 0.4 #DDDDDD,
+        stop: 0.6 #D8D8D8, stop: 1.0 #a6a29a); /* Apply a linear gradient background to QToolBox tabs */
+    padding: 0 10px; /* Add padding to the left and right of QToolBox tabs */
+}
+
+QToolBox::tab:selected {
+    font: italic; /* Italicize selected QToolBox tabs */
+    font-weight: 600; /* Set a higher font weight for selected tabs */
+}
+
+/* QLabel styles */
+QLabel {
+    border-radius: 3px; /* Apply a slight border radius to labels */
+    padding: 5px; /* Add padding around labels */
+    color: #0a3622; /* Set the text color for labels */
+    min-height: 20px; /* Set a minimum height for labels */
+}
+
+/* Form input styles (QComboBox, QSpinBox, QLineEdit) */
+QComboBox,
+QSpinBox,
+QLineEdit {
+    min-height: 20px; /* Set a minimum height for form input elements */
+    padding: 5px; /* Add padding to form input elements */
+    font-family: Segoe UI Semibold; /* Set a specific font family for form input elements */
+    font-size: 14px; /* Set the font size for form input elements */
+    color: #3232CD; /* Set the text color for form input elements */
+}
+
+/* QPushButton styles */
+QPushButton {
+    padding: 10px; /* Add padding to push buttons */
+    border-top-right-radius: 10px 15px; /* Set the border radius for the top-right corner */
+    border-top-left-radius: 5px; /* Set the border radius for the top-left corner */
+    border-bottom-left-radius: 10px 15px; /* Set the border radius for the bottom-left corner */
+    border-bottom-right-radius: 5px; /* Set the border radius for the bottom-right corner */
+    max-width: 200px; /* Set a maximum width for push buttons */
+    background-color: #2d6df4; /* Set the background color of push buttons */
+    font-weight: 300; /* Set the font weight for push buttons */
+    color: #fff; /* Set the text color for push buttons to white */
+}
+
+/* Disabled QPushButton styles */
+QPushButton:disabled {
+    background-color: #b0ada6; /* Set the background color for disabled push buttons */
+}
+
+/* Hovered QPushButton styles */
+QPushButton:hover {
+    background-color: #2050b0; /* Set the background color when push buttons are hovered over */
+}
+
+/* Specific frame styles */
+#db_frame {
+    background-color: #fff; /* Set the background color for the 'db_frame' */
+    border: 1px solid #f8f9fa; /* Add a 1px solid border with a specific color */
+    border-radius: 5px; /* Set the border radius for the 'db_frame' */
+}
+
+#db_frame QLabel {
+    background-color: #d4e6de; /* Set the background color for labels inside the 'db_frame' */
+    max-width: 150px; /* Set a maximum width for labels inside the 'db_frame' */
+}
+
+#info_frame QLabel {
+    background-color: #d2e1fc; /* Set the background color for labels inside the 'info_frame' */
+    color: #000; /* Set the text color for labels inside the 'info_frame' to black */
+    min-width: 80px; /* Set a minimum width for labels inside the 'info_frame' */
+}
+
+#info_frame QLineEdit {
+    border: none; /* Remove borders from QLineEdit elements inside the 'info_frame' */
+}
+
+#question_frame QLabel {
+    background-color: #ffc107; /* Set the background color for labels inside the 'question_frame' */
+    color: #000; /* Set the text color for labels inside the 'question_frame' to black */
+    border-top-left-radius: 10px; /* Set the border radius for the top-left corner of labels */
+    border-top-right-radius: 10px; /* Set the border radius for the top-right corner of labels */
+    border-bottom-right-radius: 0; /* Set the border radius for the bottom-right corner of labels */
+    border-bottom-left-radius: 0; /* Set the border radius for the bottom-left corner of labels */
+}
+
+#answer_frame {
+    padding: 5px 10px; /* Add padding to the 'answer_frame' */
+}
+
+/* QPlainTextEdit styles */
+QPlainTextEdit {
+    background-color: #fff;
+    color: #000;  
+    padding: 5px 10px;
+    border-bottom-right-radius: 10px; /* Set the border radius for the bottom-right corner of QPlainTextEdit */
+    border-bottom-left-radius: 10px; /* Set the border radius for the bottom-left corner of QPlainTextEdit */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="1" column="0">
+     <widget class="QToolBox" name="toolBox">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>999</width>
+         <height>499</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>icons/settings-9-64 (1).ico</normaloff>icons/settings-9-64 (1).ico</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Settings</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QFrame" name="db_frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>15</number>
+           </property>
+           <property name="topMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>15</number>
+           </property>
+           <property name="horizontalSpacing">
+            <number>10</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Select Category</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Number of Questions</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Select Difficulty</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QComboBox" name="comboBox_5"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_9">
+             <property name="text">
+              <string>Select Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="4">
+            <widget class="QFrame" name="frame_3">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="bottomMargin">
+               <number>15</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="text">
+                 <string>Get New Questions</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>icons/search-9-48.ico</normaloff>icons/search-9-48.ico</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>18</width>
+                  <height>18</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="spinBox_2">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>50</number>
+             </property>
+             <property name="value">
+              <number>50</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QComboBox" name="comboBox_4"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="comboBox_6"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>999</width>
+         <height>499</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset>
+         <normaloff>icons/question-mark-64.ico</normaloff>icons/question-mark-64.ico</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>Questions</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QFrame" name="questions_frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QFrame" name="info_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <property name="horizontalSpacing">
+               <number>30</number>
+              </property>
+              <item row="0" column="0">
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_6">
+                  <property name="text">
+                   <string>Category</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Segoe UI Semibold</family>
+                    <pointsize>-1</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="1">
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <item>
+                 <widget class="QLabel" name="label_8">
+                  <property name="text">
+                   <string>difficulty</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="question_count_label">
+                <property name="text">
+                 <string>10/50</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="question_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Question:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPlainTextEdit" name="plainTextEdit">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>system-ui</family>
+                  <pointsize>-1</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="plainText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="answer_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <property name="topMargin">
+                  <number>9</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>9</number>
+                 </property>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="function_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>Try Again</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>icons/refresh-48.ico</normaloff>icons/refresh-48.ico</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="text">
+                 <string>Check</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>icons/checkmark-48.ico</normaloff>icons/checkmark-48.ico</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>Next</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>icons/arrow-21-48.ico</normaloff>icons/arrow-21-48.ico</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QFrame" name="title_frame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Zurich XBlk BT</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Quiz Application</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="label">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>icons/logo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1017</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
