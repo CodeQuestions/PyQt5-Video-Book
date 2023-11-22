@@ -50,6 +50,17 @@
 </details>
 
 <details>
+  <summary><strong> 020 QThread Example </strong></summary>
+  <br/>
+  
+  * > [https://youtu.be/Mv_oQ_OohPQ](https://youtu.be/CRDXmbJ2Q_M)
+    
+    ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/a95255fd-b314-447d-b980-7a28135394ad)
+
+</details>
+
+
+<details>
   <summary><strong> 019 PyQt6 Programs | Quiz App </strong></summary>
   <br/>
   
