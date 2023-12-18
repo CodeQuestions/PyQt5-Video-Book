@@ -1,0 +1,6 @@
+QLineEdit:focus,
+QSpinBox:focus,
+QComboBox:focus
+{
+    border: 1px solid #3574f0;
+}
