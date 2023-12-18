@@ -49,8 +49,21 @@
   
 </details>
 
+
+
 <details>
-  <summary><strong> 020 QThread Example </strong></summary>
+  <summary><strong> 021 PyQt6 Programs | Stock/inventory management application </strong></summary>
+  <br/>
+  
+  * > [https://youtu.be/Mv_oQ_OohPQ](https://youtu.be/AOciUtIElb8)
+    
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/689df0f5-8c46-4453-b02c-8330084780c7)
+    
+</details>
+
+
+<details>
+  <summary><strong> 020 PyQt6 Programs | QThread Example </strong></summary>
   <br/>
   
   * > [https://youtu.be/Mv_oQ_OohPQ](https://youtu.be/CRDXmbJ2Q_M)
