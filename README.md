@@ -52,6 +52,18 @@
 
 
 <details>
+  <summary><strong> 022 PyQt6 Programs | Data entry form for Excel </strong></summary>
+  <br/>
+  
+  * > [https://www.youtube.com/watch?v=WbCGv0Yml2Q](https://youtu.be/WbCGv0Yml2Q)
+    
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/88f12030-bd75-4d14-8bde-518429189c40)
+
+    
+</details>
+
+
+<details>
   <summary><strong> 021 PyQt6 Programs | Stock/inventory management application </strong></summary>
   <br/>
   
