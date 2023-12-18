@@ -57,14 +57,15 @@
   
   * > [https://www.youtube.com/watch?v=WbCGv0Yml2Q](https://youtu.be/WbCGv0Yml2Q)
     
-    ### Key Points:
-    1. how to load qss file for PyQt application
-    2. how to get file path in PyQt
-    3. how to get data by requests
-    4. how to set icon to the each item in ComboBox
-    5. how to  set QIcon() pixmap from URLs
-    6. how to use QThread
-    7. how to use pandas to add new data into Excel
+    ##### Key Points:
+    
+      1.how to load qss file for PyQt application
+      2.how to get file path in PyQt
+      3.how to get data by requests
+      4.how to set icon to the each item in ComboBox
+      5.how to  set QIcon() pixmap from URLs
+      6.how to use QThread
+      7.how to use pandas to add new data into Excel
     
   ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/88f12030-bd75-4d14-8bde-518429189c40)
 
