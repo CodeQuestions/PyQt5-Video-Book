@@ -54,7 +54,7 @@
 <details>
   <summary><strong> 023 PyQt6 Programs | App Style Calculator </strong></summary>
   <br/>
-  * > {}
+  * > https://youtu.be/2XdhmcyAnH0
 
   ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/6208687c-36e5-4c92-a7cc-13b3a9102e9f)
   
