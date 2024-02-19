@@ -5,6 +5,13 @@
 <details>
   <summary><strong>StyleSheet Example</strong></summary>
   
+  #### QGroupBox And QLineEdit (custom input)
+
+  * > https://youtu.be/FDPBQwPL-XM
+  
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/8b8836a0-61da-4423-8dab-d1f01d47fba0)
+
+  
   #### QLineEdit
   
   * > https://youtu.be/HnzGjobOSh0
