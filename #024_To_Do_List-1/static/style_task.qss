@@ -1,0 +1,47 @@
+/* Base widget styling */
+QWidget {
+    background: #FFFFFF; /* Set the background color to white */
+    border-radius: 10px; /* Round corners for a softer look */
+}
+
+/* Styling for unchecked checkboxes */
+QCheckBox {
+    color: #000000; /* Set text color to black for visibility */
+    font-size: 15px; /* Set the font size for readability */
+}
+
+/* Styling for checked checkboxes */
+QCheckBox:checked {
+    text-decoration: line-through; /* Cross out text to indicate completion */
+    color: #808080; /* Change text color to grey to differentiate from unchecked */
+}
+
+/* Base styling for checkbox indicators */
+QCheckBox::indicator {
+    width: 30px; /* Set width of the checkbox indicator */
+    height: 30px; /* Set height of the checkbox indicator */
+}
+
+/* Styling for checked state indicator */
+QCheckBox::indicator:checked {
+    image: url("./static/icons/check_circle_FILL.min.svg"); /* Use custom checked icon */
+}
+
+/* Styling for unchecked state indicator */
+QCheckBox::indicator:unchecked {
+    image: url("./static/icons/circle.min.svg"); /* Use custom unchecked icon */
+}
+
+/* Base styling for buttons */
+QPushButton {
+    border: none; /* Remove border for a flat design */
+    border-radius: 15px; /* Round corners for consistency with QWidget */
+    max-width: 40px; /* Limit button width for a uniform look */
+    max-height: 40px; /* Limit button height for a uniform look */
+    /* Note: 'icon' property should be set programmatically in PyQt */
+}
+
+/* Hover styling for buttons */
+QPushButton:hover {
+    background: #c3c8bb; /* Change background on hover for visual feedback */
+}

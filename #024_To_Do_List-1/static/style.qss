@@ -1,0 +1,98 @@
+/* Sets the background of the main window with an image, centered and scaled to cover the entire window */
+#MainWindow {
+    background: url("./static/img.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Styles all QLabel elements with increased font size and weight for better visibility */
+QLabel {
+    font-size: 25px;
+    font-weight: 700; /* Bold */
+}
+
+/* Styles QLineEdit elements for a modern, minimalistic appearance */
+QLineEdit {
+    font-size: 15px;
+    border: none; /* Removes border */
+    background-color: transparent; /* Makes background transparent */
+}
+
+/* Styles the add button with a custom icon, white text, and increased font size and weight */
+#add_btn {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    /* Note: 'icon' property should be set programmatically in PyQt */
+}
+
+/* Ensures the list view has a transparent background and no border for seamless integration */
+#listView {
+    background: transparent;
+    border: none;
+}
+
+/* Applies a semi-transparent white background and rounded corners to specific frames for a layered, modern look */
+#frame_3, #frame_2 {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Sets a specific height for #frame_3 to maintain consistent design */
+#frame_3 {
+    height: 60px;
+}
+
+/* Provides rounded corners and a specific height to frames and buttons within #frame for a cohesive appearance */
+#frame, #frame QPushButton {
+    border-radius: 35px;
+    height: 70px;
+}
+
+/* Sets the background color and font size for #frame, enhancing readability and visual appeal */
+#frame {
+    background-color: #e5e5e5;
+    font-size: 20px;
+}
+
+/* Customizes the appearance of buttons within #frame with a distinct background color, white text, and fixed width */
+#frame QPushButton {
+    background-color: #ff643a;
+    color: #fff;
+    width: 150px;
+}
+
+/* Styles the vertical scrollbar with a minimalist design, including a custom handle for better interaction */
+QScrollBar:vertical {
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #1e1f22; /* Dark handle for contrast */
+    min-height: 20px;
+    border-radius: 2px;
+}
+
+/* Removes the buttons at the end of the scrollbar for a cleaner look */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical, QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    height: 0;
+    width: 0;
+    border: none;
+    background: none;
+}
+
+/* Mirrors the vertical scrollbar styling for the horizontal scrollbar for consistency */
+QScrollBar::handle:horizontal {
+    background: #1e1f22;
+    min-width: 20px;
+    border-radius: 2px;
+}
+
+QScrollBar:horizontal {
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    height: 5px;
+}
