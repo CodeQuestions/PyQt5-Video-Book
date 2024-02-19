@@ -59,6 +59,7 @@
 <details>
   <summary><strong> 024 PyQt6 Programs | To-Do List </strong></summary>
   <br/>
+  
   * > [https://youtu.be/2XdhmcyAnH0](https://youtu.be/zGrS1Vg0BRo)
 
  ![image]("https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/b092de93-a0e2-47ce-bce0-3726c70d292d")
@@ -70,6 +71,7 @@
 <details>
   <summary><strong> 023 PyQt6 Programs | App Style Calculator </strong></summary>
   <br/>
+  
   * > https://youtu.be/2XdhmcyAnH0
 
   ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/6208687c-36e5-4c92-a7cc-13b3a9102e9f)
