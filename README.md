@@ -61,9 +61,9 @@
   <br/>
   * > [https://youtu.be/2XdhmcyAnH0](https://youtu.be/zGrS1Vg0BRo)
 
-  <img width="501" alt="Snipaste_2024-02-18_14-02-53" src="https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/b092de93-a0e2-47ce-bce0-3726c70d292d">
+ ![image]("https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/b092de93-a0e2-47ce-bce0-3726c70d292d")
 
-  
+
 </details>
 
 
