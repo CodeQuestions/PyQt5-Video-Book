@@ -1,0 +1,47 @@
+/* Base widget styling for a softer look and consistency across UI */
+QWidget {
+    background: #FFFFFF;  /* White background for clarity */
+    border-radius: 10px;    /* Rounded corners for a modern, friendly appearance */            
+}
+
+/* General styling for checkboxes to improve visibility and readability */
+QCheckBox {
+    color: #000000;  /* Black text for high contrast */
+    font-size: 15px;   /* Larger font size for easy reading */
+}
+
+/* Enhances visual feedback for checked checkboxes by crossing out and dimming the text */
+QCheckBox:checked {
+    text-decoration: line-through;  /* Indicates completion visually */
+    color: #808080;              /* Grey text to differentiate from unchecked state */
+}
+
+/* Consistent sizing for checkbox indicators for a clean, unified look */
+QCheckBox::indicator {
+    width: 30px;   /* Custom width for larger, more clickable area */
+    height: 30px;  /* Custom height to match width, maintaining aspect ratio */
+}
+
+/* Custom icons for checkbox indicators to enhance UI aesthetics */
+QCheckBox::indicator:checked {
+    image: url("./static/icons/check_circle_FILL.min.svg");  /* Custom icon for checked state */
+}
+
+QCheckBox::indicator:unchecked {
+    image: url("./static/icons/circle.min.svg");  /* Custom icon for unchecked state */
+}
+
+
+
+/* Base styling for buttons, focusing on a minimalistic, flat design */
+QPushButton {
+    border: none;         /* Eliminates default border for a flat design */
+    border-radius: 15px;  /* Rounded corners to match QWidget styling */
+    max-width: 40px;      /* Uniform width for consistency */
+    max-height: 40px;     /* Uniform height for consistency */
+}
+
+/* Subtle hover effect for buttons to provide visual feedback to users */
+QPushButton:hover {
+    background: #c3c8bb;  /* Light background change on hover */
+}

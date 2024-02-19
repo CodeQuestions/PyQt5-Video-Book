@@ -30,7 +30,7 @@ class myMainWindow(QMainWindow):
         self.show_fix_shadows()
 
         ## /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        ## connect singal and slot
+        ## connect signal and slot
         self.horizontalSlider_x = self.main_ui.horizontalSlider
         self.horizontalSlider_y = self.main_ui.horizontalSlider_2
         self.horizontalSlider_radius = self.main_ui.horizontalSlider_3
@@ -108,7 +108,7 @@ class myMainWindow(QMainWindow):
 
         if color_dialog.exec():
             ## /////////////////////////////////////////////////////////////////////////////////////////////////////////
-            ## get slected color
+            ## get selected color
             color = color_dialog.selectedColor()
             if color.isValid():
                 ## /////////////////////////////////////////////////////////////////////////////////////////////////////

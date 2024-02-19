@@ -1,0 +1,83 @@
+/* Sets the background of the main window with an image,
+  centered and scaled to cover the entire window */
+#MainWindow {
+    background: url("./static/background.jpg") no-repeat center center fixed;        
+}  
+
+/* Styles all QLabel elements with increased font size
+  and weight for better visibility */
+QLabel {
+    font-size: 25px;
+    font-weight: 700; /* Bold */
+}
+
+/* Styles QLineEdit elements for a modern, minimalistic appearance */
+QLineEdit {
+  font-size: 15px;
+  border: none;                  /* Removes border */
+  background-color: transparent; /* Makes background transparent */
+}
+
+/* Ensures the list view has a transparent background
+  and no border for seamless integration */
+  #task_listView {
+    background: transparent;
+    border: none;
+}
+
+/* Applies a semi-transparent white background and rounded corners
+  to specific frames for a layered, modern look */
+  #title_frame, #task_frame {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+/* Provides rounded corners and a specific height to frames
+  and buttons within #add_task_frame for a cohesive appearance */
+  #add_task_frame,
+  #add_task_frame QPushButton {
+      border-radius: 35px;
+      height: 70px;
+  }
+  
+  /* Sets the background color and font size for
+    #add_task_frame, enhancing readability and visual appeal */
+  #add_task_frame {
+      background-color: #e5e5e5;
+      font-size: 20px;
+  }
+  
+  /* Customizes the appearance of buttons within
+    #add_task_frame with a distinct background color,
+    white text, and fixed width */
+  #add_task_frame QPushButton {
+      background-color: #ff643a;
+      color: #fff;
+      width: 150px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  /* Scrollbars */
+QScrollBar:vertical, QScrollBar:horizontal {
+  border: none;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 5px;  /* For vertical */
+  height: 5px; /* For horizontal */
+}
+
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+  background: #1e1f22; /* Could use --scrollbar-handle-color */
+  min-height: 20px;      /* For vertical */
+  min-width: 20px;       /* For horizontal */
+  border-radius: 2px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+  height: 0;
+  width: 0;
+  border: none;
+  background: none;
+}
