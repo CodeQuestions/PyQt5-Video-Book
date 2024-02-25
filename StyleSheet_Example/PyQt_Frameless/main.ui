@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1261</width>
+    <height>987</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#title_frame {
+    border-top-left-radius: 10px;  /* Rounds the top left corner of the title frame */
+    background-color: #4789f3;  /* Sets a blue background color for the title frame, making it stand out */
+}
+
+#main_frame {
+    border-bottom-right-radius: 10px;  /* Rounds the bottom right corner of the main frame */
+    border-bottom-left-radius: 10px;  /* Rounds the bottom left corner of the main frame */
+    background-color: #d8d8d8;  /* Sets a light grey background color for the main frame */
+}
+
+#title_frame QLabel {
+    color: #fff;  /* Sets the text color to white for labels in the title frame for better readability */
+    background-color: transparent;  /* Ensures the label background is transparent */
+}
+
+#icon_label {
+	min-width: 30px;  /* Sets a minimum width for the icon label */
+    min-height: 30px;  /* Sets a minimum height for the icon label */
+    max-width: 30px;  /* Sets a maximum width for the icon label to ensure it stays a fixed size */
+    max-height: 30px;  /* Sets a maximum height for the icon label */
+    border-radius: 15px;  /* Rounds the edges of the icon label to make it circular */
+	border: 1px solid #fff;
+}
+
+#title_frame QPushButton {
+    border: none;  /* Removes the border from QPushButton in the title frame for a cleaner look */
+    width: 50px;  /* Sets the width of the button */
+    height: 40px;  /* Sets the height of the button */
+}
+
+#maxmize_btn:hover, #minimize_btn:hover {
+    background-color: #d8d8d8;  /* Changes the background color of maximize and minimize buttons on hover for visual feedback */
+}
+
+#close_btn:hover {
+    background-color: #c42b1c;  /* Changes the background color of the close button on hover to a distinct red, indicating a destructive action */
+}
+
+#close_btn, #title_frame {
+    border-top-right-radius: 10px;  /* Rounds the top right corner of the close button and the title frame for a softened edge */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="title_frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="icon_label">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Window Title</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>952</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="minimize_btn">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/minimize.svg</normaloff>icon/minimize.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="maxmize_btn">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/full_window.svg</normaloff>
+             <normalon>icon/normal_window.svg</normalon>icon/full_window.svg</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="close_btn">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>icon/close.svg</normaloff>icon/close.svg</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QFrame" name="main_frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
