@@ -5,7 +5,7 @@
 <details>
   <summary><strong>StyleSheet Example</strong></summary>
 
-    #### Create a Custom Title Bar for a PyQt Window
+  #### Date input with a dropdown menu
 
   * > 
   
