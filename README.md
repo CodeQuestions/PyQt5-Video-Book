@@ -4,7 +4,14 @@
 
 <details>
   <summary><strong>StyleSheet Example</strong></summary>
+
+  #### Create a Custom Title Bar for a PyQt Window
+
+  * > [https://youtu.be/FDPBQwPL-XM](https://youtu.be/COFPORbKZH4)
   
+  ![custom title bar for a pyqt window](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/bc47aac1-9cff-4eb4-974f-01af4f9ea8e5)
+
+
   #### QGroupBox And QLineEdit (custom input)
 
   * > https://youtu.be/FDPBQwPL-XM
