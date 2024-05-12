@@ -5,6 +5,13 @@
 <details>
   <summary><strong>StyleSheet Example</strong></summary>
 
+    #### Create a Custom Title Bar for a PyQt Window
+
+  * > 
+  
+  ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/f96a488c-ab13-4bed-9060-0d34bda505ca)
+
+
   #### Create a Custom Title Bar for a PyQt Window
 
   * > [https://youtu.be/FDPBQwPL-XM](https://youtu.be/COFPORbKZH4)
