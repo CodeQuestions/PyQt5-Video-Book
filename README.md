@@ -7,7 +7,7 @@
 
   #### Date input with a dropdown menu
 
-  * > 
+  * > https://youtu.be/iAe_RIY0HsU
   
   ![image](https://github.com/ingwant/PyQt5-Video-Book/assets/31199068/f96a488c-ab13-4bed-9060-0d34bda505ca)
 
